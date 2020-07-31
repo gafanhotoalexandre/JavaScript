@@ -5,16 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Somador de Valores do Alê</title>
     <style>
-        
+        body {
+            font: normal 18pt Arial;
+            color: black;
+            text-shadow: 2px 2px 4px black;
+        }
+        h1 {
+            text-align: center;
+            background-color: blanchedalmond;
+        }
+
+        input {
+            font: normal 18pt Arial;
+            width: 200px;
+        }
+        div#operacao {
+            text-align: center;
+        }
+        div#res {
+            font: normal 24pt Arial;
+            text-align: center;
+            margin-top: 20px;
+        }
     </style>
     
 </head>
 <body>
     <h1>Somar Valores</h1>
-    <input type="number" name="txtn1" id="txtn1">
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="Somar" onclick="somador()">
+    <div id="operacao">
+        <input type="number" name="txtn1" id="txtn1"><strong> + </strong>
+        <input type="number" name="txtn2" id="txtn2">
+        <input type="button" value="Somar" onclick="somador()">
+    </div>
     <div id="res"><h2>Resultado</h2></div>
+    <h1>O Que Achou?</h1>
     <script>
         function somador() {
             var tn1 = window.document.getElementById('txtn1')
