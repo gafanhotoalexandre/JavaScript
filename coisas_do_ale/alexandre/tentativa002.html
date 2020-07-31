@@ -19,6 +19,9 @@
             font: normal 18pt Arial;
             width: 200px;
         }
+        div#botao {
+            margin-top: 20px;
+        }
         div#operacao {
             text-align: center;
         }
@@ -35,7 +38,9 @@
     <div id="operacao">
         <input type="number" name="txtn1" id="txtn1"><strong> + </strong>
         <input type="number" name="txtn2" id="txtn2">
-        <input type="button" value="Somar" onclick="somador()">
+        <div id="botao">
+            <input type="button" value="Somar" onclick="somador()">
+        </div>    
     </div>
     <div id="res"><h2>Resultado</h2></div>
     <h1>O Que Achou?</h1>
