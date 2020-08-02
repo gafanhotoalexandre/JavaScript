@@ -1,7 +1,6 @@
-var velocidade = 31
-if (velocidade <= 30) {
-    console.log('Você é muito vagaroso')
-}else {
-    console.log('Vai com calma, irmão')
+var velocidade = 300
+console.log(`Sua velocidade é ${velocidade}Km/h`)
+if (velocidade > 60) {//Condição Simples
+    console.log('Ultrapassou o limite de velocidade. Você está multado')
 }
 console.log('Use sempre cinto de segurança')

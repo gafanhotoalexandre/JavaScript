@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>É Brasileiro?</title>
+
+    <style>
+        body {
+            font: bold 20pt Arial;
+            text-align: center;
+            background-color: rgb(101, 101, 196);
+        }
+    </style>
+</head>
+<body>
+    <div id="titulo">
+        <h1>De Onde Você É?</h1>
+    </div>
+
+    <div id="corpo">
+        <h2>Digite o Nome do seu País de Origem</h2>
+        <input type="text" name="txtpais" id="txtpais">
+        <input type="button" value="Verificar" onclick="verificar()">
+        <h2 id="resultado"></h2>
+    </div>
+
+
+    <footer id="rodape">
+        <p>Alexandre Martins</p>
+    </footer>
+    <script>
+        function verificar() {
+            var resposta = window.document.querySelector('input#txtpais')
+            var nacao = (resposta.value).toUpperCase()
+            var resultado = window.document.querySelector('h2#resultado')
+            if (nacao != 'BRASIL') {
+                resultado.innerHTML = 'É Estrangeiro!'
+            }else {
+                resultado.innerHTML = 'É Brasileiro!'
+            }
+        }   
+    </script>
+</body>
+</html>
