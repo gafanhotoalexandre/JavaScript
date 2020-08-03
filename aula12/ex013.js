@@ -38,4 +38,4 @@ switch(dia) {
         console.log('ERRO| Impossível realizar ação')
         break
 }
-console.log(diaSemana)
+console.log(`Hoje é ${diaSemana}`)
