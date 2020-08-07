@@ -1,3 +1,4 @@
+// WHILE | Estrutura de Contagem até 10 ou de 10 à 1
 var a = 10
 if (a === 1) {
     while (a <= 10) {
