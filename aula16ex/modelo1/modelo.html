@@ -8,11 +8,21 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Acumulador de Valores</h1>
     </header>
     <section>
         <div>
-            Testando...
+            <p>
+                Número (entre 1 e 10):
+                    <input type="number" name="num" id="fnum">
+                    <input type="button" value="Adicionar" onclick="adicionar()">
+            </p>
+            <p>
+                <input type="button" value="Finalizar" onclick="finalizar()">
+            </p>
+            <p>
+                <select name="lista" id="flista" size="10"></select>
+            </p>
         </div>
         <div>
             Olá!
